@@ -1,0 +1,21 @@
+NAME,SSN,SALARY,AWARDS,TAX_PAID,ELIGIBLE_FOR_PAY_RAISE
+Abhishek,61301,30000,2,yes,yes
+Alok,61302,35000,1,yes,no
+Alok,61303,36000,3,yes,yes
+Bhayva,61304,40000,2,no,yes
+Sanket ,61305,42000,2,yes,yes
+Kaif,61306,25000,2,no,no
+Pandey,61307,33000,1,yes,no
+Raj,61308,18000,1,no,yes
+Kumar,61309,19000,3,no,yes
+Saini,61310,24000,1,yes,yes
+Manoj,61311,28000,3,yes,yes
+Mahesh,61312,49000,1,yes,no
+Taifoor,61313,50000,1,no,yes
+Krishna,61314,21000,1,yes,yes
+Ram,61315,25000,2,yes,yes
+Srinath,61316,25000,1,yes,yes
+Talpade,61317,35000,2,yes,yes
+Raghu,61318,38000,1,yes,no
+Sat,61319,22000,3,no,yes
+,61320,30000,1,yes,no
