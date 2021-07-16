@@ -1,0 +1,407 @@
+> show dbs
+admin   0.000GB
+config  0.000GB
+local   0.000GB
+> use movies
+switched to db movies
+> db.films.insertMany ([{
+... "movie_name" : "Kai po che",
+... "imdb_rating" : 7.9,
+... "genre" : "thriller",
+... "feedback" : 22900,
+... "referrable" : "FALSE"
+... },{
+... "movie_name" : "beauty and the beast",
+... "imdb_rating" : 6.2,
+... "genre" : "action",
+... "feedback" : 97247,
+... "referrable" : "FALSE"
+... },{
+... "movie_name" : "holiday",
+... "imdb_rating" : 9,
+... "genre" : "action",
+... "feedback" : 99646,
+... "referrable" : "TRUE"
+... },{
+... "movie_name" : "gayab",
+... "imdb_rating" : 7.4,
+... "genre" : "action",
+... "feedback" : 22018,
+... "referrable" : "TRUE"
+... },{
+... "movie_name" : "fireball",
+... "imdb_rating" : 8.8,
+... "genre" : "drama",
+... "feedback" : 37252,
+... "referrable" : "FALSE"
+... },{
+... "movie_name" : "wanted",
+... "imdb_rating" : 8.9,
+... "genre" : "suspense",
+... "feedback" : 53577,
+... "referrable" : "TRUE"
+... },{
+... "movie_name" : "impression",
+... "imdb_rating" : 6.9,
+... "genre" : "action",
+... "feedback" : 46297,
+... "referrable" : "TRUE"
+... },{
+... "movie_name" : "avengers",
+... "imdb_rating" : 6.7,
+... "genre" : "thriller",
+... "feedback" : 64397,
+... "referrable" : "FALSE"
+... },{
+... "movie_name" : "iron man",
+... "imdb_rating" : 5,
+... "genre" : "thriller",
+... "feedback" : 12297,
+... "referrable" : "FALSE"
+... },{
+... "movie_name" : "nayak",
+... "imdb_rating" : 5.9,
+... "genre" : "suspense",
+... "feedback" : 12297,
+... "referrable" : "TRUE"
+... },{
+... "movie_name" : "fireball",
+... "imdb_rating" : 8,
+... "genre" : "action",
+... "feedback" : 12297,
+... "referrable" : "TRUE"
+... },{
+... "movie_name" : "dolly ki dolly",
+... "imdb_rating" : 8,
+... "genre" : "action",
+... "feedback" : 54497,
+... "referrable" : "FALSE"
+... },{
+... "movie_name" : "queen",
+... "imdb_rating" : 7.4,
+... "genre" : "romantic",
+... "feedback" : 90297,
+... "referrable" : "TRUE"
+... },{
+... "movie_name" : "hidden life",
+... "imdb_rating" : 6.9,
+... "genre" : "action",
+... "feedback" : 30297,
+... "referrable" : "FALSE"
+... },{
+... "movie_name" : "bob",
+... "imdb_rating" : 4.3,
+... "genre" : "action",
+... "feedback" : 42297,
+... "referrable" : "FALSE"
+... },{
+... "movie_name" : "mission impossible",
+... "imdb_rating" : 9,
+... "genre" : "action",
+... "feedback" : 23233,
+... "referrable" : "TRUE"
+... },{
+... "movie_name" : "happen",
+... "imdb_rating" : 8.9,
+... "genre" : "suspense",
+... "feedback" : 52243,
+... "referrable" : "FALSE"
+... },{
+... "movie_name" : "faltu",
+... "imdb_rating" : 3,
+... "genre" : "thriller",
+... "feedback" : 12347,
+... "referrable" : "TRUE"
+... },{
+... "movie_name" : "devil",
+... "imdb_rating" : 7.9,
+... "genre" : "suspense",
+... "feedback" : 23397,
+... "referrable" : "FALSE"
+... },{
+... "movie_name" : "void",
+... "imdb_rating" : 2,
+... "genre" : "suspense",
+... "feedback" : 52322,
+... "referrable" : "TRUE"
+... },{
+... "movie_name" : "sadak",
+... "imdb_rating" : 1,
+... "genre" : "thriller",
+... "feedback" : 52397,
+... "referrable" : "FALSE"
+... }
+... ]
+... )
+{
+        "acknowledged" : true,
+        "insertedIds" : [
+                ObjectId("60f086cc9aa864e9d146fc45"),
+                ObjectId("60f086cc9aa864e9d146fc46"),
+                ObjectId("60f086cc9aa864e9d146fc47"),
+                ObjectId("60f086cc9aa864e9d146fc48"),
+                ObjectId("60f086cc9aa864e9d146fc49"),
+                ObjectId("60f086cc9aa864e9d146fc4a"),
+                ObjectId("60f086cc9aa864e9d146fc4b"),
+                ObjectId("60f086cc9aa864e9d146fc4c"),
+                ObjectId("60f086cc9aa864e9d146fc4d"),
+                ObjectId("60f086cc9aa864e9d146fc4e"),
+                ObjectId("60f086cc9aa864e9d146fc4f"),
+                ObjectId("60f086cc9aa864e9d146fc50"),
+                ObjectId("60f086cc9aa864e9d146fc51"),
+                ObjectId("60f086cc9aa864e9d146fc52"),
+                ObjectId("60f086cc9aa864e9d146fc53"),
+                ObjectId("60f086cc9aa864e9d146fc54"),
+                ObjectId("60f086cc9aa864e9d146fc55"),
+                ObjectId("60f086cc9aa864e9d146fc56"),
+                ObjectId("60f086cc9aa864e9d146fc57"),
+                ObjectId("60f086cc9aa864e9d146fc58"),
+                ObjectId("60f086cc9aa864e9d146fc59")
+        ]
+}
+>
+> > db.films.find().pretty()
+uncaught exception: SyntaxError: expected expression, got '>' :
+@(shell):1:0
+> db.films.find().pretty()
+{
+        "_id" : ObjectId("60f086cc9aa864e9d146fc45"),
+        "movie_name" : "Jai ho",
+        "imdb_rating" : 9,
+        "genre" : "action",
+        "feedback" : 52297,
+        "referrable" : "FALSE"
+}
+{
+        "_id" : ObjectId("60f086cc9aa864e9d146fc46"),
+        "movie_name" : "harry potter",
+        "imdb_rating" : 7.2,
+        "genre" : "action",
+        "feedback" : 52227,
+        "referrable" : "TRUE"
+}
+{
+        "_id" : ObjectId("60f086cc9aa864e9d146fc47"),
+        "movie_name" : "the mermaid ",
+        "imdb_rating" : 5.8,
+        "genre" : "suspense",
+        "feedback" : 55497,
+        "referrable" : "TRUE"
+}
+{
+        "_id" : ObjectId("60f086cc9aa864e9d146fc48"),
+        "movie_name" : "raid",
+        "imdb_rating" : 7,
+        "genre" : "action",
+        "feedback" : 51237,
+        "referrable" : "TRUE"
+}
+{
+        "_id" : ObjectId("60f086cc9aa864e9d146fc49"),
+        "movie_name" : "fire",
+        "imdb_rating" : 4,
+        "genre" : "drama",
+        "feedback" : 12297,
+        "referrable" : "FALSE"
+}
+{
+        "_id" : ObjectId("60f086cc9aa864e9d146fc4a"),
+        "movie_name" : "wanted",
+        "imdb_rating" : 8.9,
+        "genre" : "suspense",
+        "feedback" : 53577,
+        "referrable" : "TRUE"
+}
+{
+        "_id" : ObjectId("60f086cc9aa864e9d146fc4b"),
+        "movie_name" : "impression",
+        "imdb_rating" : 6.9,
+        "genre" : "action",
+        "feedback" : 46297,
+        "referrable" : "TRUE"
+}
+{
+        "_id" : ObjectId("60f086cc9aa864e9d146fc4c"),
+        "movie_name" : "avengers",
+        "imdb_rating" : 6.7,
+        "genre" : "thriller",
+        "feedback" : 64397,
+        "referrable" : "FALSE"
+}
+{
+        "_id" : ObjectId("60f086cc9aa864e9d146fc4d"),
+        "movie_name" : "iron man",
+        "imdb_rating" : 5,
+        "genre" : "thriller",
+        "feedback" : 12297,
+        "referrable" : "FALSE"
+}
+{
+        "_id" : ObjectId("60f086cc9aa864e9d146fc4e"),
+        "movie_name" : "nayak",
+        "imdb_rating" : 5.9,
+        "genre" : "suspense",
+        "feedback" : 12297,
+        "referrable" : "TRUE"
+}
+{
+        "_id" : ObjectId("60f086cc9aa864e9d146fc4f"),
+        "movie_name" : "fireball",
+        "imdb_rating" : 8,
+        "genre" : "action",
+        "feedback" : 12297,
+        "referrable" : "TRUE"
+}
+{
+        "_id" : ObjectId("60f086cc9aa864e9d146fc50"),
+        "movie_name" : "dolly ki dolly",
+        "imdb_rating" : 8,
+        "genre" : "action",
+        "feedback" : 54497,
+        "referrable" : "FALSE"
+}
+{
+        "_id" : ObjectId("60f086cc9aa864e9d146fc51"),
+        "movie_name" : "queen",
+        "imdb_rating" : 7.4,
+        "genre" : "romantic",
+        "feedback" : 90297,
+        "referrable" : "TRUE"
+}
+{
+        "_id" : ObjectId("60f086cc9aa864e9d146fc52"),
+        "movie_name" : "hidden life",
+        "imdb_rating" : 6.9,
+        "genre" : "action",
+        "feedback" : 30297,
+        "referrable" : "FALSE"
+}
+{
+        "_id" : ObjectId("60f086cc9aa864e9d146fc53"),
+        "movie_name" : "dare",
+        "imdb_rating" : 4.3,
+        "genre" : "action",
+        "feedback" : 42297,
+        "referrable" : "FALSE"
+}
+{
+        "_id" : ObjectId("60f086cc9aa864e9d146fc54"),
+        "movie_name" : "sky",
+        "imdb_rating" : 7.8,
+        "genre" : "action",
+        "feedback" : 23233,
+        "referrable" : "TRUE"
+}
+{
+        "_id" : ObjectId("60f086cc9aa864e9d146fc55"),
+        "movie_name" : "joker",
+        "imdb_rating" : 8.9,
+        "genre" : "suspense",
+        "feedback" : 52243,
+        "referrable" : "FALSE"
+}
+{
+        "_id" : ObjectId("60f086cc9aa864e9d146fc56"),
+        "movie_name" : "the girl next door",
+        "imdb_rating" : 8.5,
+        "genre" : "thriller",
+        "feedback" : 12347,
+        "referrable" : "TRUE"
+}
+{
+        "_id" : ObjectId("60f086cc9aa864e9d146fc57"),
+        "movie_name" : "shakuntala devi",
+        "imdb_rating" : 7.9,
+        "genre" : "suspense",
+        "feedback" : 23397,
+        "referrable" : "FALSE"
+}
+{
+        "_id" : ObjectId("60f086cc9aa864e9d146fc58"),
+        "movie_name" : "ramanujan",
+        "imdb_rating" : 7,
+        "genre" : "suspense",
+        "feedback" : 52322,
+        "referrable" : "TRUE"
+}
+Type "it" for more
+>  db.films.aggregate([{ $group : {_id : "$genre", avg_rating : {$avg : "$imdb_rating"}}}]).pretty()
+{ "_id" : "action", "avg_rating" : 7.2333333333333325 }
+{ "_id" : "suspense", "avg_rating" : 7.3999999999999995 }
+{ "_id" : "romantic", "avg_rating" : 7.4 }
+{ "_id" : "drama", "avg_rating" : 4 }
+{ "_id" : "thriller", "avg_rating" : 7.05 }
+>  db.films.aggregate([{ $match : { genre : "thriller"}}]).pretty()
+{
+        "_id" : ObjectId("60f086cc9aa864e9d146fc4c"),
+        "movie_name" : "avengers",
+        "imdb_rating" : 6.7,
+        "genre" : "thriller",
+        "feedback" : 64397,
+        "referrable" : "FALSE"
+}
+{
+        "_id" : ObjectId("60f086cc9aa864e9d146fc4d"),
+        "movie_name" : "iron man",
+        "imdb_rating" : 5,
+        "genre" : "thriller",
+        "feedback" : 12297,
+        "referrable" : "FALSE"
+}
+{
+        "_id" : ObjectId("60f086cc9aa864e9d146fc56"),
+        "movie_name" : "the girl next door",
+        "imdb_rating" : 8.5,
+        "genre" : "thriller",
+        "feedback" : 12347,
+        "referrable" : "TRUE"
+}
+{
+        "_id" : ObjectId("60f086cc9aa864e9d146fc59"),
+        "movie_name" : "the big bull",
+        "imdb_rating" : 8,
+        "genre" : "thriller",
+        "feedback" : 52397,
+        "referrable" : "FALSE"
+}
+>  db.films.aggregate([ { $match: { referrable: "TRUE"}}, { $group: { _id: "$movie_name", Avg_IMDB_Rating: { $avg : "$imdb_rating"}}} ])
+{ "_id" : "the girl next door", "Avg_IMDB_Rating" : 8.5 }
+{ "_id" : "fireball", "Avg_IMDB_Rating" : 8 }
+{ "_id" : "raid", "Avg_IMDB_Rating" : 7 }
+{ "_id" : "nayak", "Avg_IMDB_Rating" : 5.9 }
+{ "_id" : "queen", "Avg_IMDB_Rating" : 7.4 }
+{ "_id" : "sky", "Avg_IMDB_Rating" : 7.8 }
+{ "_id" : "the mermaid ", "Avg_IMDB_Rating" : 5.8 }
+{ "_id" : "harry potter", "Avg_IMDB_Rating" : 7.2 }
+{ "_id" : "wanted", "Avg_IMDB_Rating" : 8.9 }
+{ "_id" : "impression", "Avg_IMDB_Rating" : 6.9 }
+{ "_id" : "ramanujan", "Avg_IMDB_Rating" : 7 }
+> db.films.aggregate([ { $match: { genre: "suspense"}}, { $group: { _id: "$movie_name", Avg_IMDB_Rating: { $avg : "$imdb_rating"}}}  ])
+{ "_id" : "nayak", "Avg_IMDB_Rating" : 5.9 }
+{ "_id" : "joker", "Avg_IMDB_Rating" : 8.9 }
+{ "_id" : "the mermaid ", "Avg_IMDB_Rating" : 5.8 }
+{ "_id" : "wanted", "Avg_IMDB_Rating" : 8.9 }
+{ "_id" : "ramanujan", "Avg_IMDB_Rating" : 7 }
+{ "_id" : "shakuntala devi", "Avg_IMDB_Rating" : 7.9 }
+> var mapper = function(){emit(this.genre,this["feedback"])}
+> var reduce = function(genre,feedback){return Array.sum(feedback)}
+> db.films.mapReduce(mapper,reduce, {out : "Feedbackout"})
+{ "result" : "Feedbackout", "ok" : 1 }
+> db.Feedbackout.find().pretty()
+{ "_id" : "action", "value" : 364679 }
+{ "_id" : "suspense", "value" : 249333 }
+{ "_id" : "romantic", "value" : 90297 }
+{ "_id" : "drama", "value" : 12297 }
+{ "_id" : "thriller", "value" : 141438 }
+>  db.films.aggregate([{ $group : {_id : { genre : "thriller"}, "Total Positive Reviews" : {$sum : "$feedback"}}}])
+{ "_id" : { "genre" : "thriller" }, "Total Positive Reviews" : 858044 }
+>  db.films.aggregate([{ $group : {_id : "$genre", "Total Positive Reviews" : {$sum : "$feedback"}}}]).pretty()
+{ "_id" : "thriller", "Total Positive Reviews" : 141438 }
+{ "_id" : "drama", "Total Positive Reviews" : 12297 }
+{ "_id" : "romantic", "Total Positive Reviews" : 90297 }
+{ "_id" : "suspense", "Total Positive Reviews" : 249333 }
+{ "_id" : "action", "Total Positive Reviews" : 364679 }
+>  db.films.aggregate([{ $group : {_id : "$genre", "Total Positive Reviews" : {$sum : "$feedback"}}}]).pretty()
+
+
+
